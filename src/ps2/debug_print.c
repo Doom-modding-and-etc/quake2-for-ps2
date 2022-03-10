@@ -10,8 +10,8 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "ps2/debug_print.h"
-#include "ps2/defs_ps2.h"
+#include "src/ps2/debug_print.h"
+#include "src/ps2/defs_ps2.h"
 
 // PS2DEV libraries:
 #include <stdio.h>

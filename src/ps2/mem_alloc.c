@@ -10,8 +10,8 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "ps2/mem_alloc.h"
-#include "game/q_shared.h" // For mem_hunk_t
+#include "mem_alloc.h"
+#include "src/game/q_shared.h" // For mem_hunk_t
 
 #include <stdlib.h>
 #include <string.h>

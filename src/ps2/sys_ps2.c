@@ -10,18 +10,19 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "common/q_common.h"
-#include "ps2/debug_print.h"
-#include "ps2/mem_alloc.h"
-#include "ps2/defs_ps2.h"
-#include "game/game.h" // For GetGameAPI()
+#include "src/common/q_common.h"
+#include "debug_print.h"
+#include "mem_alloc.h"
+#include "defs_ps2.h"
+#include "src/game/game.h" // For GetGameAPI()
 
 // PS2DEV SDK:
 #include <kernel.h>
 #include <smod.h>
 #include <sifrpc.h>
+#define NEWLIB_PORT_AWARE
 #include <loadfile.h>
-
+#include <fcntl.h>
 // ref_ps2.c
 extern void PS2_RendererShutdown(void);
 
@@ -378,26 +379,26 @@ qboolean Sys_LoadBinaryFile(const char * filename, int * size_bytes, void ** dat
     void * file_data   = NULL;
     qboolean had_error = false;
 
-    fd = fioOpen(filename, O_RDONLY);
+    fd = open(filename, O_RDONLY);
     if (fd < 0)
     {
         had_error = true;
         goto BAIL;
     }
 
-    file_len = fioLseek(fd, 0, SEEK_END);
+    file_len = fseek(fd, 0, SEEK_END);
     if (file_len <= 0)
     {
         had_error = true;
         goto BAIL;
     }
 
-    fioLseek(fd, 0, SEEK_SET); // rewind
+    fseek(fd, 0, SEEK_SET); // rewind
 
     // Alloc or fail with a Sys_Error.
     file_data = PS2_MemAlloc(file_len, MEMTAG_MISC);
 
-    num_read = fioRead(fd, file_data, file_len);
+    num_read = read(fd, file_data, file_len);
     if (num_read != file_len)
     {
         had_error = true;
@@ -408,7 +409,7 @@ BAIL:
 
     if (fd >= 0)
     {
-        fioClose(fd);
+        close(fd);
     }
 
     if (had_error)

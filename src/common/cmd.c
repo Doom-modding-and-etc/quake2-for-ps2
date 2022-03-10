@@ -23,7 +23,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // Added 'static' to local data and 'const' to char* pointer parameters.
 //
 
-#include "common/q_common.h"
+#include "q_common.h"
 
 //
 // Quake script command processing module

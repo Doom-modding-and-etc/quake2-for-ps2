@@ -20,7 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 // glimp_null.c -- null OpenGL context.
 
-#include "client/client.h"
+#include "src/client/client.h"
 
 void GLimp_BeginFrame(float camera_separation)
 {

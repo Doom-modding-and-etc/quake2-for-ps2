@@ -10,8 +10,8 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "ps2/vec_mat.h"
-#include "ps2/math_funcs.h"
+#include "vec_mat.h"
+#include "math_funcs.h"
 
 //=============================================================================
 //

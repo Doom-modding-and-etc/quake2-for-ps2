@@ -20,7 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 // cd_null.c -- null CD audio API
 
-#include "client/client.h"
+#include "src/client/client.h"
 
 void CDAudio_Play(int track, qboolean looping)
 {

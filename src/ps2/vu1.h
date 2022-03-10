@@ -13,7 +13,7 @@
 #ifndef PS2_VU1_H
 #define PS2_VU1_H
 
-#include "ps2/vu_prog_mgr.h"
+#include "vu_prog_mgr.h"
 
 // Initialize local VU1 library data. Call it at renderer startup.
 void VU1_Init(void);

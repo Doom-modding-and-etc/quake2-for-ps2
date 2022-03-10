@@ -10,8 +10,8 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "common/q_common.h"
-#include "ps2/defs_ps2.h"
+#include "src/common/q_common.h"
+#include "defs_ps2.h"
 
 //
 // Local loopback (localhost) buffers, adapted from net_wins.c

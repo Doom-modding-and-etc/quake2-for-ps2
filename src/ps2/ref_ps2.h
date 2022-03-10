@@ -13,8 +13,8 @@
 #ifndef PS2_REFRESH_H
 #define PS2_REFRESH_H
 
-#include "client/client.h"
-#include "ps2/defs_ps2.h"
+#include "src/client/client.h"
+#include "defs_ps2.h"
 
 // PS2DEV SDK:
 #include <tamtypes.h>

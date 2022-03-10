@@ -14,7 +14,7 @@
 #ifndef PS2_MODEL_H
 #define PS2_MODEL_H
 
-#include "ps2/ref_ps2.h"
+#include "ref_ps2.h"
 
 enum
 {

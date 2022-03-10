@@ -18,7 +18,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 */
 
-#include "common/q_common.h"
+#include "q_common.h"
 
 cvar_t * cvar_vars; // Global list of all CVars
 qboolean userinfo_modified;

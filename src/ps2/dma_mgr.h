@@ -14,7 +14,7 @@
 #define PS2_DMA_MGR_H
 
 #include <tamtypes.h>
-#include "ps2/defs_ps2.h"
+#include "defs_ps2.h"
 
 /*
 ==============================================================

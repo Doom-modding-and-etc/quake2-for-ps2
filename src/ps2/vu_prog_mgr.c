@@ -10,8 +10,8 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "ps2/vu_prog_mgr.h"
-#include "common/q_common.h"
+#include "vu_prog_mgr.h"
+#include "src/common/q_common.h"
 
 /*
 ================

@@ -24,8 +24,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #ifndef Q_COMMON_H
 #define Q_COMMON_H
 
-#include "ps2/math_funcs.h"
-#include "game/q_shared.h"
+#include "src/ps2/math_funcs.h"
+#include "src/game/q_shared.h"
 
 #define VERSION 3.19
 #define BASEDIRNAME "baseq2"
@@ -632,7 +632,7 @@ CMODEL
 ==============================================================
 */
 
-#include "common/q_files.h"
+#include "src/common/q_files.h"
 
 cmodel_t * CM_LoadMap(char * name, qboolean clientload, unsigned * checksum);
 cmodel_t * CM_InlineModel(char * name); // *1, *2, etc

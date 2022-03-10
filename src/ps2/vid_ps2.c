@@ -10,7 +10,7 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "ps2/ref_ps2.h"
+#include "ref_ps2.h"
 
 // Global video state (used by the game):
 viddef_t viddef = {0};

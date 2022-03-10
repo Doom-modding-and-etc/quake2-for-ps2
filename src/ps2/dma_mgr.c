@@ -15,10 +15,10 @@
 // PS2 Linux samples available at http://www.hsfortuna.pwp.blueyonder.co.uk
 //
 
-#include "ps2/dma_mgr.h"
-#include "ps2/mem_alloc.h"
-#include "ps2/vu_prog_mgr.h"
-#include "common/q_common.h"
+#include "dma_mgr.h"
+#include "mem_alloc.h"
+#include "vu_prog_mgr.h"
+#include "src/common/q_common.h"
 
 // PS2DEV SDK:
 #include <kernel.h>

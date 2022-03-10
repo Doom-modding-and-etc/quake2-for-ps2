@@ -18,7 +18,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 */
 
-#include "common/q_common.h"
+#include "q_common.h"
 #include <setjmp.h>
 
 //
@@ -279,7 +279,7 @@ Handles byte ordering and avoids alignment errors
 
 vec3_t bytedirs[NUMVERTEXNORMALS] =
 {
-#include "client/anorms.h"
+#include "src/client/anorms.h"
 };
 
 //
@@ -1099,7 +1099,7 @@ void Info_Print(char * s)
 // Replaced malloc/free with the PS2 memory allocation wrappers to keep
 // count of all memory allocations, plus a few other minor changes.
 //
-#include "ps2/mem_alloc.h"
+#include "src/ps2/mem_alloc.h"
 
 enum
 {

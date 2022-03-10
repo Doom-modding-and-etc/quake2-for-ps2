@@ -10,7 +10,7 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "common/q_common.h"
+#include "src/common/q_common.h"
 
 // An artificial argv[] param for Qcommon_Init:
 static char * ps2_argv[] = { "QPS2.ELF", NULL };

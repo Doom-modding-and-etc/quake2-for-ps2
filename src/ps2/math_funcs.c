@@ -11,7 +11,7 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "ps2/math_funcs.h"
+#include "math_funcs.h"
 
 // Asm code originally from Morten "Sparky" Mikkelsen's fast maths routines
 // (From a post on the forums at www.playstation2-linux.com)

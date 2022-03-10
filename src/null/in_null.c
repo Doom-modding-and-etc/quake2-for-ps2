@@ -20,7 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 // in_null.c -- for systems without a mouse
 
-#include "client/client.h"
+#include "src/client/client.h"
 
 cvar_t * in_mouse;
 cvar_t * in_joystick;

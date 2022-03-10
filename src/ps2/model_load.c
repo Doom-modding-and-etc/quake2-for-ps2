@@ -10,10 +10,10 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "ps2/model_load.h"
-#include "ps2/ref_ps2.h"
-#include "ps2/mem_alloc.h"
-#include "common/q_files.h"
+#include "model_load.h"
+#include "ref_ps2.h"
+#include "mem_alloc.h"
+#include "src/common/q_files.h"
 
 // d*_t structures are on-disk representation
 // m*_t structures are in-memory representation

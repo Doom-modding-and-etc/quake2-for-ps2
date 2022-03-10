@@ -10,14 +10,14 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "common/q_common.h"
-#include "ps2/ref_ps2.h"
-#include "ps2/mem_alloc.h"
-#include "ps2/model_load.h"
-#include "ps2/math_funcs.h"
-#include "ps2/vec_mat.h"
-#include "ps2/vu1.h"
-#include "ps2/gs_defs.h"
+#include "src/common/q_common.h"
+#include "ref_ps2.h"
+#include "mem_alloc.h"
+#include "model_load.h"
+#include "math_funcs.h"
+#include "vec_mat.h"
+#include "vu1.h"
+#include "gs_defs.h"
 
 //
 // ---------------------------
