@@ -10,9 +10,9 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "src/client/client.h"
-#include "src/ps2/ref_ps2.h"
-#include "src/ps2/mem_alloc.h"
+#include "client/client.h"
+#include "ps2/ref_ps2.h"
+#include "ps2/mem_alloc.h"
 
 // Functions exported from this file:
 void Test_PS2_Draw2D(void);
