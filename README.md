@@ -71,3 +71,13 @@ Id Software
 
 # TODO-LIST:
 - Migrate to gcc 11.2
+- Port the code to newlib plus clang-format
+- Finish Vector Unit-accelerated rendering
+- Add texture mapping, lightmaps and dynamic lights
+- Add sound rendering/mixing for the PS2
+- Add gamepad input
+- Hook `dlmalloc`
+- Optimize memory allocation/usage as much as possible
+- Optimize rendering to ensure smooth 30fps gameplay
+
+
