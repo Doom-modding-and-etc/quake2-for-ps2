@@ -15,7 +15,7 @@ hardware-accelerated raw level geometry rendering implemented.
 The long term goal would be to have a fully functional and playable (single-player)
 Quake II on the PlayStation 2, using only on the freely available tools and libraries.
 
-![Raw level geometry](https://raw.githubusercontent.com/glampert/quake2-for-ps2/master/misc/screens/q2ps2-level-notex-2.png "Raw level geometry")
+![Raw level geometry](https://raw.githubusercontent.com/glampert/quake2-for-ps2/master/misc/screenshots/q2ps2-level-notex-2.png "Raw level geometry")
 
 Some of the main features still missing are:
 

@@ -32,7 +32,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #pragma warning(disable : 4305) // truncation from const double to float
 #endif // _WIN32
 
-#include "src/ps2/math_funcs.h"
+#include "ps2/math_funcs.h"
 
 #include <assert.h>
 #include <stdio.h>

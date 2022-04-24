@@ -24,8 +24,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #ifndef Q_COMMON_H
 #define Q_COMMON_H
 
-#include "src/ps2/math_funcs.h"
-#include "src/game/q_shared.h"
+#include "ps2/math_funcs.h"
+#include "game/q_shared.h"
 
 #define VERSION 3.19
 #define BASEDIRNAME "baseq2"

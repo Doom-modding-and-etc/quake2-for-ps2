@@ -18,6 +18,9 @@
         "string_view": "c",
         "kernel.h": "c",
         "string.h": "c",
-        "client.h": "c"
+        "client.h": "c",
+        "keys.h": "c",
+        "stdio.h": "c",
+        "math_funcs.h": "c"
     }
 }

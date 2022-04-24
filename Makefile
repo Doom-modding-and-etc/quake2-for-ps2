@@ -137,14 +137,7 @@ EE_INCS = -I$(PS2SDK)/ee/include -I$(PS2SDK)/iop/include/ -Isrc/client -Isrc/com
 
 EE_LDFLAGS = -L$(PS2SDK)/ee/lib -L$(PS2SDK)/iop/lib/ 
 
-EE_LIBS = -ldma -lgraph -ldraw -lpatches -lm -lc -lkernel 
-
-#
-# IOP/IRX modules pulled from the PS2DEV SDK:
-#
-#IRX_PATH  = $(PS2SDK)/iop/irx
-
-#IRX_FILES = usbd.irx
+EE_LIBS = -ldmakit -lgraph -ldraw -lpatches -lm -lc -lkernel 
 
 usbd_irx.s: $(PS2SDK)/iop/irx/usbd.irx
 	$(BIN2S) $< $@ usbd_irx
@@ -165,8 +158,6 @@ PS2_LINKCMD = -mno-crt0 -T$(PS2SDK)/ee/startup/linkfile
 PS2_STARTUP_FILE = $(PS2SDK)/ee/startup/crt0.o
 
 all: $(EE_BIN) $(EE_ASM)
-
-
 
 clean:  
 	$(EE_ASM)
