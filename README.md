@@ -17,16 +17,6 @@ Quake II on the PlayStation 2, using only on the freely available tools and libr
 
 ![Raw level geometry](https://raw.githubusercontent.com/glampert/quake2-for-ps2/master/misc/screenshots/q2ps2-level-notex-2.png "Raw level geometry")
 
-Some of the main features still missing are:
-
-- Finish Vector Unit-accelerated rendering
-- Add texture mapping, lightmaps and dynamic lights
-- Add sound rendering/mixing for the PS2
-- Add gamepad input
-- Hook `dlmalloc`
-- Optimize memory allocation/usage as much as possible
-- Optimize rendering to ensure smooth 30fps gameplay
-
 ## License
 
 Quake II was originally released as GPL, and it remains as such. New code written
