@@ -18,7 +18,7 @@
 #include "dma_mgr.h"
 #include "mem_alloc.h"
 #include "vu_prog_mgr.h"
-#include "src/common/q_common.h"
+#include "../common/q_common.h"
 
 // PS2DEV SDK:
 #include <kernel.h>

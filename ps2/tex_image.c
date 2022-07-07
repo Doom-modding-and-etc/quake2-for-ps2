@@ -12,7 +12,7 @@
 
 #include "ref_ps2.h"
 #include "mem_alloc.h"
-#include "src/common/q_files.h"
+#include "../common/q_files.h"
 
 #include <draw.h>
 #include <gs_psm.h>

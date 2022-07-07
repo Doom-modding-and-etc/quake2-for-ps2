@@ -1,4 +1,3 @@
-
 -----------
  Misc info
 -----------
@@ -28,4 +27,5 @@
 
 - Added GCC '__attribute__(format)' checking to the vararg functions.
   Surprisingly few warnings were raised by that!
+
 

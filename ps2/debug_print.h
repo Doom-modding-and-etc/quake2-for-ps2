@@ -13,7 +13,7 @@
 #ifndef PS2_DEBUG_PRINT_H
 #define PS2_DEBUG_PRINT_H
 
-#include "src/common/q_common.h"
+#include "../common/q_common.h"
 
 // Char printing invariants:
 enum

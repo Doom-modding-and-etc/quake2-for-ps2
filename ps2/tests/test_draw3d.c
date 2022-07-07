@@ -10,17 +10,17 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "client/client.h"
-#include "ps2/ref_ps2.h"
-#include "ps2/mem_alloc.h"
-#include "ps2/math_funcs.h"
-#include "ps2/vec_mat.h"
+#include "../client/client.h"
+#include "../ps2/ref_ps2.h"
+#include "../ps2/mem_alloc.h"
+#include "../ps2/math_funcs.h"
+#include "../ps2/vec_mat.h"
 
-#include "ps2/vu1.h"
-#include "ps2/gs_defs.h"
+#include "../ps2/vu1.h"
+#include "../ps2/gs_defs.h"
 
-#include "ps2/dma_mgr.h"
-#include "ps2/vu_prog_mgr.h"
+#include "../ps2/dma_mgr.h"
+#include "../ps2 vu_prog_mgr.h"
 
 // Functions exported from this file:
 void Test_PS2_VU1Triangle(void);

@@ -13,7 +13,7 @@
 #include "model_load.h"
 #include "ref_ps2.h"
 #include "mem_alloc.h"
-#include "src/common/q_files.h"
+#include "../common/q_files.h"
 
 // d*_t structures are on-disk representation
 // m*_t structures are in-memory representation

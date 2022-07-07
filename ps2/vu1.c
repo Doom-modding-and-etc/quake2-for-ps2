@@ -13,7 +13,7 @@
 #include "vu1.h"
 #include "mem_alloc.h"
 #include "defs_ps2.h"
-#include "src/game/q_shared.h" // For qboolean and stuff...
+#include "../game/q_shared.h" // For qboolean and stuff...
 
 // PS2DEV SDK:
 #include <kernel.h>

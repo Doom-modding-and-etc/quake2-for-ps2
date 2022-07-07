@@ -10,8 +10,8 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "src/ps2/debug_print.h"
-#include "src/ps2/defs_ps2.h"
+#include "../ps2/debug_print.h"
+#include "../ps2/defs_ps2.h"
 
 // PS2DEV libraries:
 #include <stdio.h>
@@ -621,4 +621,5 @@ const unsigned char scr_font_bitmap[] PS2_ALIGN(16) =
 "\x00\x00\x00\x00\x30\x00\x00\x00\x3e\x20\x20\x20\xa0\x60\x20\x00"
 "\xa0\x50\x50\x50\x00\x00\x00\x00\x40\xa0\x20\x40\xe0\x00\x00\x00"
 "\x00\x38\x38\x38\x38\x38\x38\x00\x00\x00\x00\x00\x00\x00\x00";
+
 

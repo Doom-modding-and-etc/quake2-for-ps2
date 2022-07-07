@@ -20,7 +20,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 // sys_null.h -- null system driver to aid porting efforts
 
-#include "src/common/q_common.h"
+#include "../common/q_common.h"
 
 int curtime;
 unsigned sys_frame_time;

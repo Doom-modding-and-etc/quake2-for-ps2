@@ -11,7 +11,7 @@
  * ================================================================================================ */
 
 #include "mem_alloc.h"
-#include "src/game/q_shared.h" // For mem_hunk_t
+#include "../game/q_shared.h" // For mem_hunk_t
 
 #include <stdlib.h>
 #include <string.h>

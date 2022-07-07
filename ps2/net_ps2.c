@@ -10,7 +10,7 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "src/common/q_common.h"
+#include "../common/q_common.h"
 #include "defs_ps2.h"
 
 //

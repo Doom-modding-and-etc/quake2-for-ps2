@@ -13,7 +13,7 @@
 #ifndef PS2_VEC_MAT_H
 #define PS2_VEC_MAT_H
 
-#include "src/ps2/defs_ps2.h"
+#include "defs_ps2.h"
 
 /*
 ==============================================================

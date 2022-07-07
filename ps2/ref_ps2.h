@@ -13,7 +13,7 @@
 #ifndef PS2_REFRESH_H
 #define PS2_REFRESH_H
 
-#include "src/client/client.h"
+#include "../client/client.h"
 #include "defs_ps2.h"
 
 // PS2DEV SDK:

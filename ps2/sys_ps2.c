@@ -10,11 +10,11 @@
  * Check the accompanying LICENSE file for details.
  * ================================================================================================ */
 
-#include "src/common/q_common.h"
+#include "../common/q_common.h"
 #include "debug_print.h"
 #include "mem_alloc.h"
 #include "defs_ps2.h"
-#include "src/game/game.h" // For GetGameAPI()
+#include "../game/game.h" // For GetGameAPI()
 
 // PS2DEV SDK:
 #include <kernel.h>
