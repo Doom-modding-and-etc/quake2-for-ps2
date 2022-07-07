@@ -1,6 +1,6 @@
 # Quake II port for the PlayStation 2
 
-This is an unofficial fan made port, targeting the PS2 Console, of the original
+This is an unofficial fan made port, targeting the PS2 Console using the original
 [Quake II source code released by id Software][link_id_repo].
 
 This port relies on the free [PS2DEV SDK][link_ps2_dev] to provide rendering,
@@ -69,5 +69,3 @@ Id Software
 - Hook `dlmalloc`
 - Optimize memory allocation/usage as much as possible
 - Optimize rendering to ensure smooth 30fps gameplay
-
-
