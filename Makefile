@@ -1,11 +1,10 @@
-
 #
 # !!! NOTE: Header files are completely ignored !!!
 # If you change a header file, either make clean or
 # change the accompanying source files to force a rebuild!
 #
 
-EE_BIN = quake2.elf
+EE_BIN = build/quake2.elf
 
 # ---------------------------------------------------------
 #  Quake 2 source files:
@@ -131,10 +130,9 @@ EE_ASM = usbd_irx.o
 
 BIN2S = $(PS2SDK)/bin/bin2s
 
-EE_CFLAGS = -D_EE -DGAME_HARD_LINKED -DPS2_QUAKE -O3 -G0 -Wformat=2 -Wall -std=c99 -I ./server -I ./ps2
+EE_CFLAGS = -D_EE -DGAME_HARD_LINKED -DPS2_QUAKE -O3 -G0 -Wformat=2 -Wall -std=c99 -I ./client -I ./common -I ./game -I ./null -I ./server -I ./ps2
 
-EE_INCS = -I$(PS2SDK)/ee/include -I$(PS2SDK)/iop/include/ -Isrc/client -Isrc/common -Isrc/game -Isrc/null -I src/ps2 -Isrc/ps2/builtin -Isrc/ps2/dlmalloc -Isrc/ps2/tests -Isrc/server
-
+EE_INCS = -I$(PS2SDK)/ee/include -I$(PS2SDK)/iop/include/ 
 EE_LDFLAGS = -L$(PS2SDK)/ee/lib -L$(PS2SDK)/iop/lib/ 
 
 EE_LIBS = -ldmakit -lgraph -ldraw -lpatches -lm -lc -lkernel 
