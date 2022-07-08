@@ -21,7 +21,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #ifndef CL_REF_H
 #define CL_REF_H
 
-#include "src/common/q_common.h"
+#include "../common/q_common.h"
 
 #define REF_API_VERSION       3
 #define ENTITY_FLAGS          68

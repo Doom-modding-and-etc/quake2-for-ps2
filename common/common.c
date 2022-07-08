@@ -279,7 +279,7 @@ Handles byte ordering and avoids alignment errors
 
 vec3_t bytedirs[NUMVERTEXNORMALS] =
 {
-#include "src/client/anorms.h"
+#include "../client/anorms.h"
 };
 
 //
@@ -1099,7 +1099,7 @@ void Info_Print(char * s)
 // Replaced malloc/free with the PS2 memory allocation wrappers to keep
 // count of all memory allocations, plus a few other minor changes.
 //
-#include "src/ps2/mem_alloc.h"
+#include "../ps2/mem_alloc.h"
 
 enum
 {

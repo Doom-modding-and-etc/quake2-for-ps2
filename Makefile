@@ -10,13 +10,8 @@ EE_BIN = build/quake2.elf
 #  Quake 2 source files:
 # ---------------------------------------------------------
 
-#
-# All C source files used by the game and the quake engine:
-#
 EE_OBJS = \
 	ps2/fact3.c \
-	ps2/tests/test_draw2d.c \
-	ps2/tests/test_draw3d.c \
 	ps2/builtin/backtile.c  \
 	ps2/builtin/conback.c   \
 	ps2/builtin/conchars.c  \
@@ -100,7 +95,7 @@ EE_OBJS = \
 	game/m_gunner.c         \
 	game/m_hover.c          \
 	game/m_infantry.c       \
-	game/m_insane.c         \   
+	game/m_insane.c         \
 	game/m_medic.c          \
 	game/m_move.c           \
 	game/m_mutant.c         \
@@ -122,21 +117,20 @@ EE_OBJS = \
 	server/sv_game.c        \
 	server/sv_init.c        \
 	server/sv_main.c        \
- server/sv_send.c        \
+    server/sv_send.c        \
 	server/sv_user.c        \
 	server/sv_world.c
 
-#embed this...
-EE_ASM = usbd_irx.o
-
+EE_ASM = usbd_irx.s
 BIN2S = $(PS2SDK)/bin/bin2s
-
 EE_CFLAGS = -D_EE -DGAME_HARD_LINKED -DPS2_QUAKE -O3 -G0 -Wformat=2 -Wall -std=c99 -I ./client -I ./common -I ./game -I ./null -I ./server -I ./ps2
-
 EE_INCS = -I$(PS2SDK)/ee/include -I$(PS2SDK)/iop/include/ 
 EE_LDFLAGS = -L$(PS2SDK)/ee/lib -L$(PS2SDK)/iop/lib/ 
-
 EE_LIBS = -ldmakit -lgraph -ldraw -lpatches -lm -lc -lkernel 
+
+#WIP
+#ps2/tests/test_draw2d.c 
+#ps2/tests/test_draw3d.c 
 
 usbd_irx.s: $(PS2SDK)/iop/irx/usbd.irx
 	$(BIN2S) $< $@ usbd_irx
@@ -150,7 +144,7 @@ EE_VCLPP = vclpp
 #
 # VCL/VU microprograms:
 #
-VCL_PATH  = src/ps2/vu1progs
+VCL_PATH = ps2/vu1progs
 VCL_FILES = color_triangles_clip_tris.vcl
 
 PS2_LINKCMD = -mno-crt0 -T$(PS2SDK)/ee/startup/linkfile

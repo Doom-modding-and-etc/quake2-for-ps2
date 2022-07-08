@@ -1,7 +1,7 @@
-
 /*
  * LAMPERT 2015-10-26
- *
+ * ANDRÉ 2022-07-07
+ * 
  * Hardcoded command line tool that dumps PCX image files into
  * C-style arrays of bytes, so that they can be easily embedded
  * into a C program.
@@ -22,19 +22,16 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdarg.h>
+#include <stdint.h>
 
-typedef unsigned int   u32;
-typedef unsigned short u16;
-typedef unsigned char  byte;
+typedef uint32_t u32;
+typedef uint16_t u16;
+typedef uint8_t byte;
 static u32 palette[256];
+#define MAX_BUF_CHARS 2048
 
 char * va(const char * format, ...)
 {
-    enum
-    {
-        MAX_BUF_CHARS = 2048
-    };
-
     // Multiple buffers, in case called by nested functions.
     static int index = 0;
     static char strings[4][MAX_BUF_CHARS];
