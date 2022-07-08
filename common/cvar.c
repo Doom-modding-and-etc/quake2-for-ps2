@@ -173,15 +173,15 @@ cvar_t * Cvar_Get(const char * var_name, const char * var_value, int flags)
         }
     }
 
-    var           = Z_Malloc(sizeof(*var));
-    var->name     = Q_CopyString(var_name);
-    var->string   = Q_CopyString(var_value);
+    var = Z_Malloc(sizeof(*var));
+    var->name = Q_CopyString(var_name);
+    var->string = Q_CopyString(var_value);
     var->modified = true;
-    var->value    = atof(var->string);
+    var->value = atof(var->string);
 
     // link the variable in
-    var->next  = cvar_vars;
-    cvar_vars  = var;
+    var->next = cvar_vars;
+    cvar_vars = var;
     var->flags = flags;
 
     return var;
@@ -279,7 +279,7 @@ cvar_t * Cvar_Set2(const char * var_name, const char * value, qboolean force)
     Z_Free(var->string); // free the old value string
 
     var->string = Q_CopyString(value);
-    var->value  = atof(var->string);
+    var->value = atof(var->string);
 
     return var;
 }
@@ -330,8 +330,8 @@ cvar_t * Cvar_FullSet(const char * var_name, const char * value, int flags)
     Z_Free(var->string); // free the old value string
 
     var->string = Q_CopyString(value);
-    var->value  = atof(var->string);
-    var->flags  = flags;
+    var->value = atof(var->string);
+    var->flags = flags;
 
     return var;
 }

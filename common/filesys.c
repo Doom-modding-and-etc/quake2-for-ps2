@@ -811,9 +811,9 @@ char ** FS_ListFiles(char * findname, int * numfiles, unsigned musthave, unsigne
         if (s[strlen(s) - 1] != '.')
         {
             list[nfiles] = Q_CopyString(s);
-            #ifdef _WIN32
+#ifdef _WIN32
             strlwr(list[nfiles]);
-            #endif // _WIN32
+#endif // _WIN32
             nfiles++;
         }
         s = Sys_FindNext(musthave, canthave);

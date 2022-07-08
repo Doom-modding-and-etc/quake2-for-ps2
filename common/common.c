@@ -277,8 +277,7 @@ Handles byte ordering and avoids alignment errors
 ==============================================================================
 */
 
-vec3_t bytedirs[NUMVERTEXNORMALS] =
-{
+vec3_t bytedirs[NUMVERTEXNORMALS] = {
 #include "../client/anorms.h"
 };
 
@@ -1182,8 +1181,8 @@ void * Z_TagMalloc(int size, int tag)
     z_count++;
     z_bytes += size;
     z->magic = Z_MAGIC;
-    z->tag   = tag;
-    z->size  = size;
+    z->tag = tag;
+    z->size = size;
 
     z->next = z_chain.next;
     z->prev = &z_chain;
@@ -1434,7 +1433,7 @@ void Qcommon_Init(int argc, char ** argv)
     Con_Init(); // LAMPERT: Early console init so we can debug initialization problems.
 
     // LAMPERT 2015-10-26:
-	// Developer mode by default, unless specified otherwise.
+    // Developer mode by default, unless specified otherwise.
     developer = Cvar_Get("developer", "1", 0);
 
     // we need to add the early commands twice, because
@@ -1467,11 +1466,11 @@ void Qcommon_Init(int argc, char ** argv)
     showtrace = Cvar_Get("showtrace", "0", 0);
     logfile_active = Cvar_Get("logfile", "0", 0);
 
-    #ifdef DEDICATED_ONLY
+#ifdef DEDICATED_ONLY
     dedicated = Cvar_Get("dedicated", "1", CVAR_NOSET);
-    #else // !DEDICATED_ONLY
+#else  // !DEDICATED_ONLY
     dedicated = Cvar_Get("dedicated", "0", CVAR_NOSET);
-    #endif // DEDICATED_ONLY
+#endif // DEDICATED_ONLY
 
     s = va("%4.2f %s %s %s", VERSION, CPUSTRING, __DATE__, BUILDSTRING);
     Com_DPrintf("Version: %s\n", s);

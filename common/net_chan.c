@@ -78,9 +78,9 @@ static cvar_t * showpackets;
 static cvar_t * showdrop;
 static cvar_t * qport;
 
-netadr_t  net_from    = {0};
-sizebuf_t net_message = {0};
-byte net_message_buffer[MAX_MSGLEN] = {0};
+netadr_t net_from = { 0 };
+sizebuf_t net_message = { 0 };
+byte net_message_buffer[MAX_MSGLEN] = { 0 };
 
 /*
 ===============

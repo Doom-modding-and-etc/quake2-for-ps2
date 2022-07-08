@@ -32,7 +32,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 enum
 {
     ALIAS_LOOP_COUNT = 16,
-    MAX_ALIAS_NAME   = 32
+    MAX_ALIAS_NAME = 32
 };
 
 typedef struct cmdalias_s
@@ -738,9 +738,9 @@ void Cmd_AddCommand(const char * cmd_name, xcommand_t function)
     }
 
     cmd = Z_Malloc(sizeof(*cmd));
-    cmd->name     = cmd_name;
+    cmd->name = cmd_name;
     cmd->function = function;
-    cmd->next     = cmd_functions;
+    cmd->next = cmd_functions;
     cmd_functions = cmd;
 }
 

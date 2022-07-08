@@ -24,8 +24,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #ifndef Q_COMMON_H
 #define Q_COMMON_H
 
-#include "../ps2/math_funcs.h"
 #include "../game/q_shared.h"
+#include "../ps2/math_funcs.h"
 
 #define VERSION 3.19
 #define BASEDIRNAME "baseq2"
@@ -71,12 +71,12 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // LAMPERT: 2015-10-26
 // So the console prints a proper version string, instead of "NON-WIN32"
 #define BUILDSTRING "PS2-QUAKE"
-#define CPUSTRING   "EE-MIPS-R5900-LE"
+#define CPUSTRING "EE-MIPS-R5900-LE"
 
 #else // !WIN32
 
 #define BUILDSTRING "NON-WIN32"
-#define CPUSTRING   "NON-WIN32"
+#define CPUSTRING "NON-WIN32"
 
 #endif
 
@@ -354,7 +354,7 @@ The game starts with a Cbuf_AddText ("exec quake.rc\n"); Cbuf_Execute ();
 
 typedef enum
 {
-    EXEC_NOW    = 0, // don't return until completed
+    EXEC_NOW = 0,    // don't return until completed
     EXEC_INSERT = 1, // insert at current position, but don't run yet
     EXEC_APPEND = 2  // add to end of the command buffer
 } cmd_exec_when_t;
@@ -731,10 +731,10 @@ MISC
 */
 
 #define ERR_FATAL 0 // exit the entire game with a popup window
-#define ERR_DROP  1 // print to console and disconnect from game
-#define ERR_QUIT  2 // not an error, just a normal exit
+#define ERR_DROP 1  // print to console and disconnect from game
+#define ERR_QUIT 2  // not an error, just a normal exit
 
-#define EXEC_NOW    0 // don't return until completed
+#define EXEC_NOW 0    // don't return until completed
 #define EXEC_INSERT 1 // insert at current position, but don't run yet
 #define EXEC_APPEND 2 // add to end of the command buffer
 
